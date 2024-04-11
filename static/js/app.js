@@ -51,7 +51,7 @@ function updateMetadata(selectedSampleId){
   
   metadata3 = data.metadata;
 
-  let selectedSample = metadata3.filter(sample => sample.id === selectedSampleId);
+  let selectedSample = metadata3.filter(sample => sample.id == selectedSampleId);
   
   // Select the container element to display metadata
   let metadataContainer = d3.select("#sample-metadata");
