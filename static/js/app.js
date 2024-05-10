@@ -12,7 +12,8 @@ d3.json(url).then(function(data) {
 
 function init(){
 
-  data = globalData[0];
+  let data = globalData[0];
+  console.log(data)
   const samples = data.samples;
   console.log("samples",samples);
   let labelsOTU_IDS = samples[0].otu_ids;
@@ -169,7 +170,7 @@ function changeSubjectID(subjectID){
   updateMetadata(subjectID);
 }
 
-init();
+// init();
 
 
 
